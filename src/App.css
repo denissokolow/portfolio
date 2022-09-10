@@ -1,0 +1,37 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr repeat(11, 1fr) 2fr;
+    grid-template-rows: repeat(14, 0.4fr);
+    row-gap: 8px;
+    column-gap: 8px;
+  }
+
+.nav{
+    display: flex;
+    background-color: rgb(103, 122, 217);
+    grid-column: 9 / 13;
+    grid-row: 1 / 1;
+  }
+
+.nav p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content{
+  background-color: blueviolet;
+  display: flex;
+  grid-column: 2 / 13;
+  grid-row: 2 / 50;
+  opacity: 50%;
+}
+
+.leftblock{
+  background-color: blue;
+  height: 100%;
+  width: 40%;
+}
+
