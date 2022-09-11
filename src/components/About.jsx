@@ -6,9 +6,8 @@ function About() {
     <div className='content'>
        <div className='leftblock'>
         <div className='imgdiv'>
-          <img src={foto}></img>
+          <img src={foto} alt='Denis Sokolov'></img>
         </div>
-    
        </div>
        <div className='description'>
         <div className='greeting'>
