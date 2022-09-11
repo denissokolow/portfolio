@@ -1,11 +1,9 @@
 import React from 'react'
+import About from './About'
 
 function Content() {
   return (
-    <div className='content'>
-       <div className='leftblock'></div>
-       
-    </div>
+      <About />
   )
 }
 
