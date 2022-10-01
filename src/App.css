@@ -1,22 +1,30 @@
+#root {
+  display: flex;
+  flex:auto;
+}
+
+body {
+  display: flex;
+  flex:auto;
+}
+
+
 h1 {
   font-family: 'Roboto';
   font-weight: 700;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 2fr repeat(11, 1fr) 2fr;
-  grid-template-rows: repeat(35, 1fr);
-  row-gap: 8px;
-  column-gap: 8px;
+  display: flex;
+  flex:auto;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  grid-column: 2 / 13;
-  grid-row: 2 / 2;
 }
 
 @media (max-width: 1200px) {
@@ -44,8 +52,8 @@ h1 {
 .content {
   display: flex;
   align-items: center;
-  grid-column: 2 / 13;
-  grid-row: 3 / 33;
+  height: 100%;
+  width: 100%;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -58,8 +66,9 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   background-color: rgb(219, 217, 217);
-  height: 100%;
-  width: 40%;
+  height: 95%;
+  width: 25%;
+  margin-left: 5%;
   box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.46);
 }
 
@@ -100,8 +109,7 @@ h1 {
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
-  grid-column: 2 / 13;
-  grid-row: 3 / 33;
+  margin-top: 5%;
 }
 
 .projects h1 {
@@ -162,8 +170,7 @@ h1 {
   align-content: center;
   flex-wrap: wrap;
   align-items: center;
-  grid-column: 2 / 13;
-  grid-row: 3 / 33;
+  margin-top: 15%;
 }
 
 .contCard {
