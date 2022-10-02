@@ -1,12 +1,14 @@
 import React from 'react'
 import foto from '../img/portret.jpg'
+import foto_mobile from '../img/portret_mobile.png'
 
 function About() {
   return (
     <div className='content'>
       <div className='leftblock'>
         <div className='imgdiv'>
-          <img src={foto} alt='Denis Sokolov'></img>
+          <img src={foto} className='foto_big' alt='Denis Sokolov'></img>
+          <img src={foto_mobile} className='foto_mobile' alt='Denis Sokolov'></img>
         </div>
       </div>
       <div className='description'>
